@@ -1,0 +1,35 @@
+<%define "title"%>Kubernetes UI<%end%>
+<%define "css"%>
+<style type="text/css">
+.container-full{
+    margin-top: 0px;
+}
+</style>
+<%end%>
+<%define "script"%>
+
+<%end%>
+
+<%define "body"%>
+<%template "navbar"%>
+<div class="container container-full">
+    <my-app></my-app>
+</div>
+</body>
+<script type="text/javascript">
+    (function() {
+        var AppComponent = ng
+                .Component({
+                    selector: 'my-app',
+                    template: '<h1>My First Angular 2 App</h1>'
+                })
+                .Class({
+                    constructor: function () { }
+                });
+        document.addEventListener('DOMContentLoaded', function() {
+            ng.bootstrap(AppComponent);
+        });
+    })();
+
+</script>
+<%end%>

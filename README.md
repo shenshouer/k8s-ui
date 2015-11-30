@@ -1,0 +1,1 @@
+go run main.go -alsologtostderr=true -logtostderr=true -addr=:8081
